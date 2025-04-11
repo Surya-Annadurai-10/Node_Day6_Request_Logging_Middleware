@@ -1,12 +1,13 @@
 const express = require("express");
-const logger = require("./logger");
 const morgan = require("morgan");
 
 const app = express();
 
+morgan.token("type" , (req) =>{
+    return req.headers['content-type']
+})
 
-
-app.post("/post" , (req , res) =>{
+app.get("/post" ,morgan(":method :remote-addr :url :response-time :type"), (req , res) =>{
     res.status(200).json(
         {message : "Posted successfully"}
     )
