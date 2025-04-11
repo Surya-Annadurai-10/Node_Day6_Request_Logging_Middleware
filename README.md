@@ -44,6 +44,7 @@ Implement logging levels (info, debug, error)
 Add more endpoints to test the logger
 
 🧑‍💻 Author
-Surya Annadurai
+
+* Surya Annadurai *
 Aspiring Full Stack Developer
 Passionate about backend and system design
