@@ -1,3 +1,5 @@
+# Request logger
+
 This project is a basic **logger-middleware**  that implements **custom logging** using the popular middleware library **Morgan**. It logs details about incoming HTTP requests, such as method, URL, response time, client IP, and content type, to the console.
 
 ---
